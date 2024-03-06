@@ -206,6 +206,9 @@ color: #F4F9FE;
 
 
 }
+textarea{
+  resize: none !important;
+}
 .pack{
 font-size: 12px;
 font-weight: 700;
