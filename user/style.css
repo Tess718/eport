@@ -109,6 +109,9 @@ text-align: left;
 .bg-blue{
     background-color: #004080 !important;
 }
+.bg-blush{
+  background-color: #00408040;
+}
 .location h6{
 font-size: 10px;
 font-weight: 400;
@@ -134,10 +137,50 @@ position: relative;
     margin-top: 10px;
 
 }
+.location_2 h6{
+font-size: 10px;
+font-weight: 400;
+line-height: 15px;
+letter-spacing: -0.04em;
+position: relative;
+}
+.location_2 h6::before{
+    width: 4px;
+    height: 4px;
+    background-color: #6E6872;
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 0;
+    border-radius: 50%;
+}
+.location_2 .circ{
+    width: 2px;
+    height: 2px;
+    background-color: #6E6872;
+    border-radius: 50%;
+    margin-top: 10px;
+
+}
 .new_height{
   height: 200px !important;
 }
+#location_details{
+  height: 0px;
+  overflow: hidden;
+}
+.blush{
+  font-family: Poppins;
+font-size: 10px;
+font-weight: 400;
+line-height: 15px;
+letter-spacing: -0.04em;
+text-align: left;
 
+}
+.rtx{
+  display: none;
+}
 .content-3 p{
 font-size: 12px;
 font-weight: 700;
@@ -367,7 +410,7 @@ text-align: left;
   .pickup_main{
     padding-bottom: 5%;
   }
-  .item_details h6, .report h6{
+  .item_details h6, .report h6, .tracking_container h6{
 font-size: 12px;
 font-weight: 500;
 line-height: 18px;
@@ -420,6 +463,13 @@ resize: none;
 .btn-blueish{
     background-color: #2169B3 !important;
     color: #fff !important;
+    font-family: Poppins;
+font-size: 12px !important;
+font-weight: 500 !important;
+line-height: 18px !important;
+letter-spacing: -0.04em;
+text-align: center;
+
 }
 .item_details label{
     font-family: Poppins;
@@ -873,7 +923,70 @@ color: #2169B3;
 .new_card{
   height: 170px;
 }
+.tracking_info p{
+  font-family: Poppins;
+font-size: 10px;
+font-weight: 500;
+line-height: 15px;
+letter-spacing: -0.04em;
+}
+.tracking_info small{
+  font-family: Poppins;
+font-size: 8px;
+font-weight: 400;
+line-height: 12px;
+letter-spacing: -0.04em;
+text-align: left;
+}
+.loc_txt{
+  font-family: Poppins;
+font-size: 10px;
+font-weight: 400;
+line-height: 15px;
+letter-spacing: -0.04em;
 
+}
+.tracking_container{
+  padding-bottom: 10% !important;
+}
+.profile_container{
+  position: relative;
+}
+#cam_icon{
+  position: absolute;
+  right: 0;
+  top: 70%;
+}
+.profile_name{
+  font-family: Poppins;
+font-size: 12px;
+font-weight: 600;
+line-height: 18px;
+letter-spacing: -0.04em;
+text-align: center;
+}
+.easy{
+  font-family: Poppins;
+font-size: 10px;
+font-weight: 400;
+line-height: 15px;
+letter-spacing: -0.04em;
+text-align: left;
+color: #004080E5;
+}
+.input_1{
+  border: 1px solid #2169B3;
+  height: 48px;
+}
+.input_1::placeholder{
+  font-family: Poppins;
+font-size: 12px;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: -0.04em;
+text-align: left;
+color: #CED8E1;
+}
 
 @media(max-width: 767px){
   body{
@@ -916,6 +1029,7 @@ color: #2169B3;
   }
   .ish{
     padding: 0;
+    width: 100% !important;
   }
   .mt-9{
     margin-top: 40%;
@@ -925,5 +1039,8 @@ color: #2169B3;
   }
   .payment_container{
     width: 100%
+  }
+  .tracking_container{
+    padding-bottom: 30% !important;
   }
 }
