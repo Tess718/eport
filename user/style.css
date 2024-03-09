@@ -57,6 +57,12 @@
     text-align: left;
 
 }
+#warning_msg{
+  display: none;
+}
+#warning{
+  cursor: pointer;
+}
 .profile input{
     border: 1px solid #D4E9FF;
     outline: none;
@@ -987,7 +993,33 @@ letter-spacing: -0.04em;
 text-align: left;
 color: #CED8E1;
 }
-
+#gen_settings, #account_toggle, #plc_toggle{
+  cursor: pointer;
+}
+.settings_main{
+  height: 90vh;
+}
+.general_settings{
+  width: 90%;
+}
+#gen{
+  display: none;
+}
+#act{
+  display: none;
+}
+#plc{
+  display: none;
+}
+#arw_down{
+  display: none;
+}
+#arw_down1{
+  display: none;
+}
+#arw_down2{
+  display: none;
+}
 @media(max-width: 767px){
   body{
     display: block;
