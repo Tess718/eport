@@ -1,5 +1,12 @@
 const lightModeRadio = document.getElementById('lightMode');
 const darkModeRadio = document.getElementById('darkMode');
+let back = document.querySelectorAll('#back');
+
+back.forEach(bac=>{
+  bac.onclick = function(){
+    window.history.back()
+  }
+})
 
 function setTheme(theme) {
   if (theme === 'dark') {
@@ -27,3 +34,4 @@ lightModeRadio.addEventListener('change', () => {
 darkModeRadio.addEventListener('change', () => {
   setTheme('dark');
 });
+

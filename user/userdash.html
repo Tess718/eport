@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eport | UserDashboard</title>
+    <title>Eport | Dashboard</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,20 +34,22 @@
             <div class="parent">
                 <div class="container">
                     <div class="d-flex justify-content-between pt-3">
-                        <div class="tshadow p-2 rounded-3 newh">
+                        <div class="tshadow p-2 rounded-3 newh" id="back">
                             <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M6 1L1 6L6 11" stroke="#2169B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M1 6H9C14.523 6 19 10.477 19 16V17" stroke="#2169B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                                 
                         </div>
-                        <div class="tshadow p-3 rounded-circle newh">
-                            <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M19.855 18.4821C18.6697 16.5233 18.0293 14.2834 18 11.9941V8.0061C18 5.88437 17.1571 3.84954 15.6569 2.34925C14.1566 0.848958 12.1217 0.00610352 10 0.00610352C7.87827 0.00610352 5.84344 0.848958 4.34315 2.34925C2.84286 3.84954 2 5.88437 2 8.0061V11.9881C1.97171 14.2794 1.33126 16.5215 0.145001 18.4821C0.0531712 18.6337 0.00330323 18.8071 0.000505995 18.9843C-0.00229124 19.1616 0.0420828 19.3364 0.129082 19.4909C0.216081 19.6453 0.342578 19.7739 0.495614 19.8634C0.64865 19.9528 0.822723 20 1 20.0001H19C19.1773 20 19.3514 19.9528 19.5044 19.8634C19.6574 19.7739 19.7839 19.6453 19.8709 19.4909C19.9579 19.3364 20.0023 19.1616 19.9995 18.9843C19.9967 18.8071 19.9468 18.6337 19.855 18.4821Z" fill="#2169B3"/>
-                                <path d="M11.007 23.8251C11.4261 23.6758 11.8068 23.4351 12.1214 23.1205C12.436 22.8059 12.6767 22.4252 12.826 22.0061H7.174C7.30623 22.3772 7.51027 22.7187 7.77446 23.0109C8.03866 23.3032 8.35783 23.5406 8.71376 23.7095C9.06969 23.8784 9.4554 23.9755 9.84888 23.9954C10.2424 24.0152 10.6359 23.9574 11.007 23.8251Z" fill="#2169B3"/>
-                                </svg>
-                                
-                        </div>
+                        <a href="Notifications.html">
+                            <div class="tshadow p-3 rounded-circle newh">
+                                <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.855 18.4821C18.6697 16.5233 18.0293 14.2834 18 11.9941V8.0061C18 5.88437 17.1571 3.84954 15.6569 2.34925C14.1566 0.848958 12.1217 0.00610352 10 0.00610352C7.87827 0.00610352 5.84344 0.848958 4.34315 2.34925C2.84286 3.84954 2 5.88437 2 8.0061V11.9881C1.97171 14.2794 1.33126 16.5215 0.145001 18.4821C0.0531712 18.6337 0.00330323 18.8071 0.000505995 18.9843C-0.00229124 19.1616 0.0420828 19.3364 0.129082 19.4909C0.216081 19.6453 0.342578 19.7739 0.495614 19.8634C0.64865 19.9528 0.822723 20 1 20.0001H19C19.1773 20 19.3514 19.9528 19.5044 19.8634C19.6574 19.7739 19.7839 19.6453 19.8709 19.4909C19.9579 19.3364 20.0023 19.1616 19.9995 18.9843C19.9967 18.8071 19.9468 18.6337 19.855 18.4821Z" fill="#2169B3"/>
+                                    <path d="M11.007 23.8251C11.4261 23.6758 11.8068 23.4351 12.1214 23.1205C12.436 22.8059 12.6767 22.4252 12.826 22.0061H7.174C7.30623 22.3772 7.51027 22.7187 7.77446 23.0109C8.03866 23.3032 8.35783 23.5406 8.71376 23.7095C9.06969 23.8784 9.4554 23.9755 9.84888 23.9954C10.2424 24.0152 10.6359 23.9574 11.007 23.8251Z" fill="#2169B3"/>
+                                    </svg>
+                                    
+                            </div>
+                        </a>
                     </div>
                     
                     <div class="ish">
@@ -88,9 +90,9 @@
                                         </svg>
                                     <p class="text-danger fw-light">Please complete your verification process soon!</p>                                
                                 </div>
-                                <div class="bg-blush rounded-pill py-1 px-3" style="width: fit-content;">
+                                <a href="verification.html"><div class="bg-blush rounded-pill py-1 px-3" style="width: fit-content;">
                                     <p class="mb-0">click here to verify your profile</p>
-                                </div>
+                                </div></a>
                             </div>
                             
                             <form action="" class="mt-4">
@@ -156,16 +158,20 @@
                             <div class="row">
                                 <div class="col-6">
                                     <div class="row flex-column">
-                                        <div class="col-12">
-                                            <div class=" px-4 w-100 delivery rounded-3 d-flex align-items-end align-items-lg-center justify-content-center">
-                                                <p class="text-white">My Deliveries</p>
+                                        <a href="deliveries.html">
+                                            <div class="col-12">
+                                                <div class=" px-4 w-100 delivery rounded-3 d-flex align-items-end align-items-lg-center justify-content-center">
+                                                    <p class="text-white">My Deliveries</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-12 mt-3">
-                                            <div class="card_2 px-4 w-100 rounded-3 d-flex align-items-center new_height">
-                                                <p>Payment</p>
+                                        </a>
+                                        <a href="payment.html">
+                                            <div class="col-12 mt-3">
+                                                <div class="card_2 px-4 w-100 rounded-3 d-flex align-items-center new_height">
+                                                    <p>Payment</p>
+                                                </div>
                                             </div>
-                                        </div>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="col-6">
@@ -176,11 +182,13 @@
                                                 <small>Coming soon...</small>
                                             </div>
                                         </div>
-                                        <div class="col-12 mt-3">
-                                            <div class="card_2 px-4 w-100 rounded-3 d-flex align-items-center new_height">
-                                                <p>Profile</p>
+                                        <a href="profile.html">
+                                            <div class="col-12 mt-3">
+                                                <div class="card_2 px-4 w-100 rounded-3 d-flex align-items-center new_height">
+                                                    <p>Profile</p>
+                                                </div>
                                             </div>
-                                        </div>
+                                        </a>
                 
                                     </div>
                 
@@ -189,12 +197,12 @@
                             </div>
                         </div>
                 
-                        <div class="add_to_truck shadow rounded-circle">
+                        <a href="deliveries.html"><div class="add_to_truck shadow rounded-circle">
                             <svg width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M27.919 10.606L24.919 3.606C24.842 3.42608 24.7139 3.27273 24.5505 3.165C24.3871 3.05727 24.1957 2.99989 24 3H21V1C21 0.734784 20.8946 0.48043 20.7071 0.292893C20.5196 0.105357 20.2652 0 20 0H13V2H19V14.556C18.5443 14.8206 18.1456 15.1728 17.8267 15.5922C17.5078 16.0117 17.2751 16.4902 17.142 17H10.858C10.6405 16.1418 10.143 15.3806 9.44422 14.8368C8.74548 14.2931 7.88538 13.9979 7 13.9979C6.11462 13.9979 5.25452 14.2931 4.55578 14.8368C3.85703 15.3806 3.35953 16.1418 3.142 17H2V8H0V18C0 18.2652 0.105357 18.5196 0.292893 18.7071C0.48043 18.8946 0.734784 19 1 19H3.142C3.35953 19.8582 3.85703 20.6194 4.55578 21.1632C5.25452 21.7069 6.11462 22.0021 7 22.0021C7.88538 22.0021 8.74548 21.7069 9.44422 21.1632C10.143 20.6194 10.6405 19.8582 10.858 19H17.142C17.3595 19.8582 17.857 20.6194 18.5558 21.1632C19.2545 21.7069 20.1146 22.0021 21 22.0021C21.8854 22.0021 22.7455 21.7069 23.4442 21.1632C24.143 20.6194 24.6405 19.8582 24.858 19H27C27.2652 19 27.5196 18.8946 27.7071 18.7071C27.8946 18.5196 28 18.2652 28 18V11C28 10.8645 27.9725 10.7305 27.919 10.606ZM7 20C6.60444 20 6.21776 19.8827 5.88886 19.6629C5.55996 19.4432 5.30362 19.1308 5.15224 18.7654C5.00087 18.3999 4.96126 17.9978 5.03843 17.6098C5.1156 17.2219 5.30608 16.8655 5.58579 16.5858C5.86549 16.3061 6.22186 16.1156 6.60982 16.0384C6.99778 15.9613 7.39991 16.0009 7.76537 16.1522C8.13082 16.3036 8.44318 16.56 8.66294 16.8889C8.8827 17.2178 9 17.6044 9 18C8.99921 18.5302 8.78824 19.0384 8.41334 19.4133C8.03844 19.7882 7.53019 19.9992 7 20ZM21 5H23.34L25.484 10H21V5ZM21 20C20.6044 20 20.2178 19.8827 19.8889 19.6629C19.56 19.4432 19.3036 19.1308 19.1522 18.7654C19.0009 18.3999 18.9613 17.9978 19.0384 17.6098C19.1156 17.2219 19.3061 16.8655 19.5858 16.5858C19.8655 16.3061 20.2219 16.1156 20.6098 16.0384C20.9978 15.9613 21.3999 16.0009 21.7654 16.1522C22.1308 16.3036 22.4432 16.56 22.6629 16.8889C22.8827 17.2178 23 17.6044 23 18C22.9995 18.5303 22.7886 19.0387 22.4136 19.4136C22.0387 19.7886 21.5303 19.9995 21 20ZM26 17H24.858C24.6377 16.1434 24.1394 15.3842 23.4412 14.8413C22.743 14.2983 21.8844 14.0025 21 14V12H26V17Z" fill="#004080"/>
                                 </svg>
                                 
-                        </div>
+                        </div></a>
                     </div>
             
                     

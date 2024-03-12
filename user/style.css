@@ -32,6 +32,12 @@
 html{
   background-color: var(--bg-light-blue);
 }
+a{
+  text-decoration: none !important;
+}
+.text-sec{
+  color: var(--secondary-font);
+}
 .normal_txt{
   color: var(--font-color);
 }
@@ -663,7 +669,7 @@ color: #CED8E1;
   background-color: #2169B3;
 }
 .bg-smblue{
-  background-color: #D4E9FF;
+  background-color: var(--bg-light-blue);
 }
 .date{
   font-family: Poppins;
@@ -831,6 +837,7 @@ font-weight: 500;
 line-height: 18px;
 letter-spacing: -0.04em;
 text-align: left;
+color: var(--font-color)
 }
 .nshadow{
   box-shadow: 0px 0.20000000298023224px 1px 0px #00408040;
@@ -842,6 +849,7 @@ font-weight: 300;
 line-height: 12px;
 letter-spacing: -0.04em;
 text-align: left;
+color: var(--secondary-font);
 
 }
 .nshadow p{
