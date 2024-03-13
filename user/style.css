@@ -56,8 +56,12 @@ a{
 .bg-whiteee{
   background-color: var(--bg-whiteee)
 }
+.bg-ssj{
+  background-color: #00408040;
+}
 .logo{
-  width: 180px;
+  width: 130px;
+  margin-top: 10%;
 }
 .sidenav{
   background-color: var(--bg-deep-blue);
@@ -91,6 +95,9 @@ a{
 }
 .border-blue{
     border:1px solid #004080;
+}
+.del_content{
+  cursor: pointer;
 }
 .profile p, .del_content p{
     font-size: 12px;
@@ -777,8 +784,9 @@ font-size: 12px;
 font-weight: 500;
 line-height: 18px;
 letter-spacing: -0.04em;
-text-align: left;
+/* text-align: left; */
 color: var(--font-color);
+
 }
 .allmsg_container{
   font-family: Poppins;
