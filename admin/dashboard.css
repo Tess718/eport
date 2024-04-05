@@ -79,6 +79,8 @@
 }
 .updates::-webkit-scrollbar{
     width: 2px;
+}
+.updates::-webkit-scrollbar-thumb{
     background-color: #888;
 }
 .d_inner::-webkit-scrollbar{
@@ -91,6 +93,37 @@
 #inputCount{
     outline: none;
     height: 35px;
+}
+.msg_parent{
+    display: none;
+}
+.activ{
+    background-color: #00152A;
+    color: #fff;
+    padding:2% 3%;
+    border-radius: 6px;
+}
+.msg{
+    margin-bottom: 10px;
+    padding:2% 3%;
+}
+.msg:hover{
+    background-color: #00152A;
+    color: #fff;
+    border-radius: 8px;
+    padding: 2% 3%;
+}
+.profile_filter, .order_filter{
+    cursor: pointer;
+}
+.order_section{
+    display: none;
+}
+.company_details{
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: -0.04em;
 }
 .popup {
     display: none;
@@ -132,12 +165,12 @@
     height: 250px;
     background-color: #D0DDE9;
 }
-.card2::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 5px; /* Set the width of the scrollbar */
 }
 
 /* Handle on the scrollbar */
-.card2::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background-color: #888; /* Color of the scrollbar handle */
     border-radius: 6px; /* Rounded corners of the scrollbar handle */
 }
@@ -198,6 +231,10 @@ input::-webkit-inner-spin-button {
 .legcontent::-webkit-scrollbar{
     width: 3px;
 }
+.legcontent::-webkit-scrollbar-thumb{
+    width: 3px;
+    background-color: #888;
+}
 .labtxt{
     font-size: 14px;
 }
@@ -210,7 +247,7 @@ a{
     text-decoration: none;
     color: inherit;
 }
-.msg small{
+.msg small, .mails small{
     font-size: 10px;
     font-weight: 400;
     line-height: 15px;
@@ -218,13 +255,23 @@ a{
     text-align: left;
 
 }
-.msg p{
+.msg p, .mails p{
     font-size: 12px;
     font-weight: 500;
     line-height: 18px;
     letter-spacing: -0.04em;
     text-align: left;
 
+}
+.step{
+    width: 25px;
+    height: 25px;
+    display: grid;
+    place-items: center;
+    font-size: 12px;
+}
+.running{
+    background-color: rgba(6, 252, 6, 0.236);
 }
 .msghead small{
     font-size: 10px;
@@ -275,6 +322,7 @@ a{
     overflow-y: scroll;
     overflow-x: hidden;
     padding-bottom: 18%;
+    /* display: block; */
 }
 .msgbody::-webkit-scrollbar {
     width: 3px; /* Adjust the width as needed */
@@ -291,11 +339,26 @@ a{
     background-color: #00152A;
     /* width: 100%; */
 }
+
 .lst{
     font-size: 10px;
     font-weight: 400 !important;
     line-height: 15px;
     letter-spacing: -0.04em;
+}
+.receive{
+    height: 500px;
+    overflow-y: hidden;
+}
+.m_placeholder{
+    display: block;
+}
+.receive_inner{
+    height: 380px;
+    overflow-y: scroll;
+}
+.receive_inner::-webkit-scrollbar{
+    display: none;
 }
 
 .sendmsg textarea{
@@ -388,6 +451,77 @@ a{
     height: 430px;
     overflow-y: scroll;
 }
+.d_card{
+    height: 430px;
+    overflow-y: scroll;
+}
+.d_card textarea{
+    resize: none;
+    height: 100px;
+}
+#categoryForm label{
+    font-size: 14px;
+}
+input[type="file"] {
+    display: none;
+  }
+  
+  .change_pic{
+    position: absolute;
+    top: 70%;
+    right: 0%;
+  }
+
+
+  .del_filter{
+    border-bottom: 1px solid #686D72;
+    background-color: #D6D6D688;
+    color: #9FA7AF;
+    cursor: pointer;
+  }
+  .current{
+    border: 0.5px solid #000;
+   background-color: #fff;
+   color: #00152A;
+   }
+   .show{
+    display: block !important;
+   }
+   .delivered_content, .undelivered_content{
+    height: 400px;
+    overflow-y: scroll;
+   }
+   .undelivered_content{
+    display: none;
+   }
+
+   .three h6{
+    font-family: Poppins;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.04em;
+  color: #2169B3;
+  }
+  .three p{
+    font-family: Poppins;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: -0.04em;
+  color: var(--font-color);
+  }
+  .three small{
+    font-family: Poppins;
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 15px;
+  letter-spacing: -0.04em;
+  color: var(--txt-blue);
+  }
+  .trackbtn{
+    font-size: 8px;
+  }
 @media(max-width: 767px){
     .w-85{
         width: 100% !important;
