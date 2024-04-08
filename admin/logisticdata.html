@@ -130,7 +130,7 @@
                                     </div>
                                 </div>
                                   <div class="search d-flex justify-content-center mt-3">
-                                    <input type="search" class="form-control w-75" placeholder="Search" id="search-item">
+                                    <input type="search" class="form-control w-75" placeholder="Search" id="search-item" oninput="search()">
                                   </div>
 
                                   <div id="del_list">
@@ -660,15 +660,15 @@
         }
 
         const search = () =>{
-    const searchbox = document.getElementById("search-item").value.toUpperCase();
-    const deliveries = document.getElementById("del_list");
-    const delly = document.querySelectorAll('.three');
-    const dname = document.getElementsByTagName('h6');
+          const searchbox = document.getElementById("search-item").value.toUpperCase();
+          const deliveries = document.getElementById("del_list");
+          const delly = document.querySelectorAll('.three');
+          const dname = deliveries.getElementsByTagName('h6');
 
 
 
     for(var i=0; i < dname.length; i++){
-        let match = delly[i].getElementsByTagName('h2')[0];
+        let match = delly[i].getElementsByTagName('h6')[0];
 
         if(match){
             let textvalue = match.textContent || match.innerHTML;
