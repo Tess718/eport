@@ -122,39 +122,46 @@
                                     <h4 class="fs-6">Update Steps</h4>
                                     <hr>
                                     <div class="d_card overflow-x-hidden">
-                                        <form action="" class="">
-                                            <div class="row">
-                                                <div class="col-6 my-1">
-                                                    <label for="step_name" class="my-2">Step Name</label>
-                                                    <input type="text" name="step_name" class=" form-control"w-100>
-        
-                                                    <label for="step_description" class="my-2">Step Description</label>
-                                                    <textarea name="step_description" id="" cols="30" rows="10" class="form-control w-100"></textarea>
-                                                </div>
-                                                <div class="col-6 my-1">
-                                                    <label for="step_name" class="my-2">Step Name</label>
-                                                    <input type="text" name="step_name" class=" form-control"w-100>
-        
-                                                    <label for="step_description" class="my-2">Step Description</label>
-                                                    <textarea name="step_description" id="" cols="30" rows="10" class="form-control w-100"></textarea>
-                                                </div>
-                                                <div class="col-6 my-1">
-                                                    <label for="step_name" class="my-2">Step Name</label>
-                                                    <input type="text" name="step_name" class=" form-control"w-100>
-        
-                                                    <label for="step_description" class="my-2">Step Description</label>
-                                                    <textarea name="step_description" id="" cols="30" rows="10" class="form-control w-100"></textarea>
-                                                </div>
-                                                <div class="col-6 my-1">
-                                                    <label for="step_name" class="my-2">Step Name</label>
-                                                    <input type="text" name="step_name" class=" form-control"w-100>
-        
-                                                    <label for="step_description" class="my-2">Step Description</label>
-                                                    <textarea name="step_description" id="" cols="30" rows="10" class="form-control w-100"></textarea>
-                                                </div>
-                                            </div>
-                                        </form>
+                                      <form action="" class="">
+                                          <div class="row">
+                                              <div class="col-6 my-1">
+                                                  <label for="step_name_1" class="my-2">Step Name</label>
+                                                  <input type="text" name="step_name" class="form-control w-100" id="step_name_1">
+                                                  <div class="rippah">
+                                                      <div class="d-flex flex-column">
+                                                          <label for="step_description_1" class="my-2">Step Description</label>
+                                                          <div class="input-container" id="input-container-1">
+                                                              <input type="text" name="step_description" id="step_description_1" class="form-control">
+                                                          </div>
+                                                          <div class="button-container mt-2">
+                                                              <button class="add-button border-0 rounded-1 bg-white" type="button" data-container-id="1">+</button>
+                                                              <button class="subtract-button border-0 rounded-1 bg-white" type="button" data-container-id="1">-</button>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="col-6 my-1">
+                                                  <label for="step_name_2" class="my-2">Step Name</label>
+                                                  <input type="text" name="step_name" class="form-control w-100" id="step_name_2">
+                                                  <div class="rippah">
+                                                      <div class="d-flex flex-column">
+                                                          <label for="step_description_2" class="my-2">Step Description</label>
+                                                          <div class="input-container" id="input-container-2">
+                                                              <input type="text" name="step_description" id="step_description_2" class="form-control">
+                                                          </div>
+                                                          <div class="button-container mt-2">
+                                                              <button class="add-button border-0 rounded-1 bg-white" type="button" data-container-id="2">+</button>
+                                                              <button class="subtract-button border-0 rounded-1 bg-white" type="button" data-container-id="2">-</button>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <!-- Additional containers... -->
+                                          </div>
+                                      </form>
                                     </div>
+                                  
+                                  
                                 </div>
                             </div>
                             <div class="col-lg-4 ms-auto">
@@ -429,28 +436,60 @@
         document.getElementById('popup').style.display = 'none';
       }
 
-      function generateInputs() {
+//   function generateInputs() {
 
-  document.getElementById('inputContainer').innerHTML = '';
-
-
-  var count = parseInt(document.getElementById('inputCount').value);
+//   document.getElementById('inputContainer').innerHTML = '';
 
 
-  var container = document.getElementById('inputContainer');
-  for (var i = 0; i < count; i++) {
-    var input = document.createElement('input');
-    input.type = 'text';
-    input.placeholder = 'Step ' + (i + 1);
-    input.name = 'input_' + (i + 1); // Naming inputs input_1, input_2, etc.
-    input.className = 'rounded-3 steps_input mb-2 mx-1 border border-3 px-2'; 
-    container.appendChild(input);
+//   var count = parseInt(document.getElementById('inputCount').value);
 
-    if ((i + 1) % 2 === 0) {
-      container.appendChild(document.createElement('br'));
-    }
-  }
-}
+
+//   var container = document.getElementById('inputContainer');
+//   for (var i = 0; i < count; i++) {
+//     var input = document.createElement('input');
+//     input.type = 'text';
+//     input.placeholder = 'Step ' + (i + 1);
+//     input.name = 'input_' + (i + 1); // Naming inputs input_1, input_2, etc.
+//     input.className = 'rounded-3 steps_input mb-2 mx-1 border border-3 px-2'; 
+//     container.appendChild(input);
+
+//     if ((i + 1) % 2 === 0) {
+//       container.appendChild(document.createElement('br'));
+//     }
+//   }
+// }
+
+
+document.querySelectorAll('.rippah').forEach(container => {
+    let inputCount = 1;
+
+    container.querySelector('.add-button').addEventListener('click', function() {
+        const containerId = this.getAttribute('data-container-id');
+        const inputContainer = document.getElementById(`input-container-${containerId}`);
+
+        const newInput = document.createElement('input');
+        newInput.type = 'text';
+        newInput.name = `Description-${containerId}-${inputCount}`;
+        newInput.className = 'form-control mt-2';
+        newInput.placeholder = `Description ${containerId}-${inputCount}`;
+
+        inputContainer.appendChild(newInput);
+
+        inputCount++;
+    });
+
+    container.querySelector('.subtract-button').addEventListener('click', function() {
+        const containerId = this.getAttribute('data-container-id');
+        const inputContainer = document.getElementById(`input-container-${containerId}`);
+
+        if (inputContainer.children.length > 1) {
+            inputContainer.removeChild(inputContainer.lastChild);
+            inputCount--;
+        }
+    });
+});
+
+
 
     </script>
 

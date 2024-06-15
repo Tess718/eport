@@ -43,6 +43,9 @@
 .seven{
     height: 24px;
 }
+.add-button, .subtract-button {
+    width: 40px;
+}
 .plctxt{
     color: #FFF;
     font-family: Poppins;
