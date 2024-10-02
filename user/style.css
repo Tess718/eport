@@ -296,6 +296,12 @@ color: var(--font-color);
     background-size: cover;
     height: 250px;
 }
+.prof_ile{
+  background-image: linear-gradient(rgba(0, 64, 128, 0.9), rgba(0, 64, 128, 0.9)), url('https://s3-alpha-sig.figma.com/img/973e/0d32/17fe0bf4f5fef4bc6330376407c03c2b?Expires=1728259200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hgE9nFOcupBWDyCRxSoAeuqBafxbzM5iXvbS7rm537k~aZF6ji5LBVrZZA~p-gpFFKNle0cspZ0kSalDKySikMdmKy~T4HnERfDPAQmBDNzA~vO~ehdxlmHktFOE~u8CtRNVKH5GUdl81SM5G6JGSs4YmM8cRxaoiVDKMOOy-3YuqaLra~VH6XgbL6pjcDysF54zRh4GC3jzvwu06UrJ-bNMOiGgyhOS8iBLqXT7ypge1rNg0EhoL3ogyXyQsrCgU2zAJz~QzbiMUxLewXWd3JnuF8fnNpl2vXqnTYNqKAUHYFL7EdP3dscLigwM1W~SAUJ4ZDRhvgKNjH9Iz6hQgw__');
+  background-size: cover;
+  background-position: top;
+
+}
 .market{
     background: url('../img/userdash/image\ 3.png');
     background-size: cover;
@@ -313,7 +319,7 @@ color: #F4F9FE;
 }
 .card_2{
     height: 150px;
-    background-color: #004080;
+    border-radius: 20px;
 }
 .card_2 p{
 font-size: 12px;
@@ -1232,6 +1238,15 @@ color: var(--txt-blue);
   /* height: 12px; */
   font-size: 8px !important;
 
+}
+.pay_me{
+  background-image: linear-gradient(rgba(0, 64, 128, 0.9), rgba(0, 64, 128, 0.9)), url('https://s3-alpha-sig.figma.com/img/f339/723c/b43936dd68b3287b6dc3c7123ca44180?Expires=1728259200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pBhZmKi3vdgy6a6-zo3RGLudmTXgj6ncSF2gY2WFJZGEeW40nDkCQN5bY4kiUskUFVzYT8Pyg4rdW5-ke5VcdGA2RMmhDIpK5-LXX5sYHsXnLE485bVwd4~rkC1hTkD-mZUKC~KFbv1~OfcZ0OVqPSUWBzI7oiuWxTMdnOMjqNGInZP8KyV-hHgjgrgDIpl-VN0EzVJOxQcS-ZuttqpQVAfobFI2y0tJeNaSn9ZrU4ja2okor3es5fGBL2fbgg4uSaPQcleBpypTeX4qnlIavyIm9XIcIcTCmsHRr0DzJrHN~fMtkDvPpDjqfNR-8miOsHkha8BtUEAlhbxLMR3q4w__');
+  background-size: cover;
+  background-position: center;
+
+}
+.fs-7{
+  font-size: 12px;
 }
 .deli_content{
   height: 400px;

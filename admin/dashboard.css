@@ -16,6 +16,7 @@
     border: 1px solid rgba(0, 64, 128, 0.25);
     background: url(<path-to-image>), lightgray 50% / cover no-repeat;
 }
+
 .card1{
     background: #D0DDE9;
 }
