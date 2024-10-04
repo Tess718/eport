@@ -477,16 +477,22 @@
             <div class="row mt-4">
 
             <div class="col-12 mb-1">
-                <label for="Country">Country</label>
-                <input type="text" class="w-100">
+                <label for="country">Select Country:</label>
+                <select id="country" name="country" onchange="fetchStates()">
+                    <option value="">Select a Country</option>
+                </select>
             </div>
             <div class="col-6 mt-1 d-flex flex-column">
-            <label for="length" id="from_region">From (i.e State)</label>
-            <input type="text" name="from">
+                <label for="state1">Select State 1:</label>
+                <select id="state1" name="state1">
+                    <option value="">Select a State</option>
+                </select>
             </div>
             <div class="col-6 mt-1 d-flex flex-column">
-            <label for="length" id="to_region">To (i.e State)</label>
-            <input type="text" name="to">
+                <label for="state2">Select State 2:</label>
+                <select id="state2" name="state2">
+                    <option value="">Select a State</option>
+                </select>
             </div>
             </div>
         </div>
@@ -1181,6 +1187,9 @@ updateVisibility();
 // Also call the function whenever the dropdown value changes
 region_type.onchange = updateVisibility;
 
+
+
+
     
 
         </script>
@@ -1212,6 +1221,80 @@ region_type.onchange = updateVisibility;
         populateCountrySelect(select2, countries);
       })
       .catch(error => console.error('Error fetching countries:', error));
+
+
+
+
+
+
+
+
+
+      async function fetchCountries() {
+        try {
+            const response = await fetch('https://countriesnow.space/api/v0.1/countries');
+            const data = await response.json();
+            const countries = data.data;
+
+            const countrySelect = document.getElementById('country');
+            countries.forEach(country => {
+                let option = document.createElement('option');
+                option.value = country.country;  // Use the country name for simplicity
+                option.textContent = country.country;
+                countrySelect.appendChild(option);
+            });
+        } catch (error) {
+            console.error('Error fetching countries:', error);
+        }
+    }
+
+    // Fetch states based on the selected country using World Countries API
+    async function fetchStates() {
+        const countrySelect = document.getElementById('country');
+        const selectedCountry = countrySelect.value;
+        const state1Select = document.getElementById('state1');
+        const state2Select = document.getElementById('state2');
+
+        // Clear previous state selections
+        state1Select.innerHTML = '<option value="">Select a State</option>';
+        state2Select.innerHTML = '<option value="">Select a State</option>';
+
+        if (!selectedCountry) {
+            return; // If no country is selected, stop
+        }
+
+        try {
+            const response = await fetch(`https://countriesnow.space/api/v0.1/countries/states`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ country: selectedCountry })
+            });
+            const data = await response.json();
+            const states = data.data.states;
+
+            // Populate both state dropdowns
+            states.forEach(state => {
+                let option1 = document.createElement('option');
+                option1.value = state.name;
+                option1.textContent = state.name;
+                state1Select.appendChild(option1);
+
+                let option2 = document.createElement('option');
+                option2.value = state.name;
+                option2.textContent = state.name;
+                state2Select.appendChild(option2);
+            });
+        } catch (error) {
+            console.error('Error fetching states:', error);
+        }
+    }
+
+    // Load countries when the page loads
+    document.addEventListener('DOMContentLoaded', fetchCountries);
+
+
   </script>
   
   
