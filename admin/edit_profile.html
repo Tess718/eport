@@ -10,6 +10,7 @@
 </head>
 <body>
     <div class="overflow-x-hidden update_parent">
+      <div class="shadow z-2"></div>
         <div class="container-fluid">
             <div class="d-flex">
                 <div class="col-1 p-3">
@@ -85,6 +86,7 @@
                         <div class="d-flex justify-content-end header">
     
                             <div class="d-flex gap-2 mt-4 mb-4">
+                              <a href="support.html" class="my-auto">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" class="my-auto" height="24" viewBox="0 0 24 24" fill="none">
                                     <g clip-path="url(#clip0_417_2200)">
                                       <path d="M23 5V16C23 16.5304 22.7893 17.0391 22.4142 17.4142C22.0391 17.7893 21.5304 18 21 18H19V22L13 18H12" stroke="#686D72" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
@@ -98,21 +100,73 @@
                                       </clipPath>
                                     </defs>
                                   </svg>
+                              </a>
     
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="my-auto">
-                                    <g clip-path="url(#clip0_417_2157)">
-                                      <path d="M15 20.25C15 21.9075 13.6575 23.25 12 23.25C10.3425 23.25 9 21.9075 9 20.25" stroke="#686D72" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                      <path d="M0.75 17.25H23.25" stroke="#686D72" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                      <path d="M21.75 17.25H22.5C20.8425 17.25 18.75 15.9075 18.75 14.25V7.5C18.75 3.7725 15.7275 0.75 12 0.75C8.2725 0.75 5.25 3.7725 5.25 7.5V14.25C5.25 15.9075 3.9075 17.25 2.25 17.25" stroke="#686D72" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </g>
-                                    <defs>
-                                      <clipPath id="clip0_417_2157">
-                                        <rect width="24" height="24" fill="white"/>
-                                      </clipPath>
-                                    </defs>
-                                  </svg>
+                                  <div class="position-relative my-auto">
+                                    <div id="noti_drop">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" >
+                                        <g clip-path="url(#clip0_417_2157)">
+                                          <path d="M15 20.25C15 21.9075 13.6575 23.25 12 23.25C10.3425 23.25 9 21.9075 9 20.25" stroke="#686D72" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M0.75 17.25H23.25" stroke="#686D72" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M21.75 17.25H22.5C20.8425 17.25 18.75 15.9075 18.75 14.25V7.5C18.75 3.7725 15.7275 0.75 12 0.75C8.2725 0.75 5.25 3.7725 5.25 7.5V14.25C5.25 15.9075 3.9075 17.25 2.25 17.25" stroke="#686D72" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                        <defs>
+                                          <clipPath id="clip0_417_2157">
+                                            <rect width="24" height="24" fill="white"/>
+                                          </clipPath>
+                                        </defs>
+                                      </svg>
+                                    </div>
+                                    
+                                    <div id="noti_space" class="rounded-4 z-3">
+                                      <div class="n_inner p-2">
+                                        <div class="noti_head bg-darkish rounded-top-3 text-white d-flex align-items-center justify-content-between px-2">
+                                          <h5 class="fs-6 p-2 m-0">Notifications</h5>
+                                          <i class="bi bi-x fs-4" id="close_n"></i>
+                                        </div>
+                                        <div class="n_body bg-white px-2 rounded-bottom-3 pt-3">
+                                          <div class="d-flex align-items-center py-3 gap-2 ">
+                                           <img src="https://img.freepik.com/free-photo/people-showing-support-respect-with-yellow-background-suicide-prevention-day_23-2151607937.jpg?t=st=1728906659~exp=1728910259~hmac=050dc3817a34a0038052955d94fe59be22ebbecf56ff8843f0c680b913587aeb&w=740" alt="" class="rounded-circle object-fit-cover" style="width: 30px; height: 30px; object-position: top;">
+                                            <div class="n_text">
+                                              <p class="m-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente temporibus unde deserunt similique? </p>
+                                            </div>
+
+                                          </div>
+                                          <div class="d-flex align-items-center py-3 gap-2 ">
+                                           <img src="https://img.freepik.com/free-photo/people-showing-support-respect-with-yellow-background-suicide-prevention-day_23-2151607937.jpg?t=st=1728906659~exp=1728910259~hmac=050dc3817a34a0038052955d94fe59be22ebbecf56ff8843f0c680b913587aeb&w=740" alt="" class="rounded-circle object-fit-cover" style="width: 30px; height: 30px; object-position: top;">
+                                            <div class="n_text">
+                                              <p class="m-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente temporibus unde deserunt similique? </p>
+                                            </div>
+
+                                          </div>
+                                          <div class="d-flex align-items-center py-3 gap-2 ">
+                                           <img src="https://img.freepik.com/free-photo/people-showing-support-respect-with-yellow-background-suicide-prevention-day_23-2151607937.jpg?t=st=1728906659~exp=1728910259~hmac=050dc3817a34a0038052955d94fe59be22ebbecf56ff8843f0c680b913587aeb&w=740" alt="" class="rounded-circle object-fit-cover" style="width: 30px; height: 30px; object-position: top;">
+                                            <div class="n_text">
+                                              <p class="m-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente temporibus unde deserunt similique? </p>
+                                            </div>
+
+                                          </div>
+                                          <div class="d-flex align-items-center py-3 gap-2 ">
+                                           <img src="https://img.freepik.com/free-photo/people-showing-support-respect-with-yellow-background-suicide-prevention-day_23-2151607937.jpg?t=st=1728906659~exp=1728910259~hmac=050dc3817a34a0038052955d94fe59be22ebbecf56ff8843f0c680b913587aeb&w=740" alt="" class="rounded-circle object-fit-cover" style="width: 30px; height: 30px; object-position: top;">
+                                            <div class="n_text">
+                                              <p class="m-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente temporibus unde deserunt similique? </p>
+                                            </div>
+
+                                          </div>
+                                          <div class="d-flex align-items-center py-3 gap-2 ">
+                                           <img src="https://img.freepik.com/free-photo/people-showing-support-respect-with-yellow-background-suicide-prevention-day_23-2151607937.jpg?t=st=1728906659~exp=1728910259~hmac=050dc3817a34a0038052955d94fe59be22ebbecf56ff8843f0c680b913587aeb&w=740" alt="" class="rounded-circle object-fit-cover" style="width: 30px; height: 30px; object-position: top;">
+                                            <div class="n_text">
+                                              <p class="m-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente temporibus unde deserunt similique? </p>
+                                            </div>
+
+                                          </div>
+                                        </div>
+
+                                      </div>
+                                    </div>
+                                  </div>
     
-                                  <img src="../img/dashboard/Ellipse 4.png" alt="" class="userpic rounded-circle">
+                                  <a href="profile.html"><img src="../img/dashboard/Ellipse 4.png" alt="" class="userpic rounded-circle"></a>
                             </div>
                         </div>
                         <div class="row">
@@ -172,14 +226,9 @@
                             </div>
                             <div class="col-lg-4 ms-auto">
                                 <div class="card1 p-3 rounded-4 w-85 ms-auto">
-                                    <div class="bg-darkish rounded-4 p-3 pb-5">
-                                        <div class="d-flex justify-content-between">
-                                            <p class="m-0 p-0 text-white">Notifications</p>
-                                        </div>
-                                        <p class="text-white plctxt pt-3 pb-5">New York, NY, United States</p>
-                                    </div>
+                                   
 
-                                    <div class="bg-light rounded-4 p-3 mt-3 updates">
+                                    <div class="bg-light rounded-4 p-3 updates">
                                       <div class="d-flex justify-content-between">
                                         <p>Delivery Updates...</p>
                                       </div>
@@ -409,7 +458,7 @@
     
 
 
-
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
